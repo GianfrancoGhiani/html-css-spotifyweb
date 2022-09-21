@@ -143,17 +143,41 @@ div[class^='line-']{
 
 .card img {
     width: 100%;
-    margin-bottom: 1em;
 }
 .title{
+    margin-top: 1em;
     font-size: 1.4rem;
 }
 .card .gr-txt{
     margin-top: 1em;
 }
+.play{
+    position: relative;
+}
+.play .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-topbar);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.overlay i{
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card:hover .overlay{
+    display: block;
+}
 .for-u .sub{
     margin-bottom: 2.5em;
 }
+
 .r-card img{
     width: 100%;
     border-radius: 50%;

@@ -177,7 +177,9 @@ div[class^='line-']{
 .for-u .sub{
     margin-bottom: 2.5em;
 }
-
+.artist .sub{
+    margin-bottom: 2.5em;
+}
 .r-card img{
     width: 100%;
     border-radius: 50%;

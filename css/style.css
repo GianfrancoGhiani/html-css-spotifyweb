@@ -61,10 +61,6 @@ body{
     font-weight: bold;
     margin: 0 0.8rem;
 }
-/* .r-card img{
-    background-image: url(../img/youg.jpeg);
-} */
-
 
 
 
@@ -88,7 +84,6 @@ h2{
 }
 .container{
     width: calc(100% - 230px);
-    /* height: calc(100% - 90px); */
     height: 100%;
     position: absolute;
     top: 0;
@@ -112,9 +107,6 @@ li{
     font-weight: bold;
     padding: 6rem 0 90px;
 }
-.category{
-
-}
 .category ul{
     margin: 0 auto;
     width: 40%;
@@ -128,13 +120,7 @@ div[class^='line-']{
 .line-g{
     border: 1px solid var(--lime);
 }
-footer{
-    width: 100%;
-    height: 90px;
-    background-color: wheat;
-    position: fixed;
-    bottom: 0;
-}
+
 .central-body section{
     padding: 1.5rem;
 }
@@ -151,4 +137,19 @@ footer{
 }
 .for-u .sub{
     margin-bottom: 2.5em;
+}
+.r-card img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+
+
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: wheat;
+    position: fixed;
+    bottom: 0;
 }

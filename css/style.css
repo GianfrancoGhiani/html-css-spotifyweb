@@ -23,10 +23,9 @@ body{
 .btn{
     font-weight: bold;
     padding: 1em;
-    margin: 1em;
     border-radius: 2em;
     border: 1px solid var(--wt);
-    width: 17em;
+    width: 17rem;
     text-align: center;
     cursor: pointer;
 }
@@ -91,14 +90,19 @@ h2{
 }
 .top-bar{
     position: fixed;
+    padding: 1rem;
     z-index: 500;
     width: calc(100% - 230px);
     top: 0;
     justify-content: flex-end;
     background-color: var(--bg-topbar);
 }
+.top-bar .btn:hover{
+    font-size: 1.1rem;
+}
 li{
     list-style: none;
+    cursor: pointer;
 }
 .central-body{
     height: 100%;
@@ -112,14 +116,26 @@ li{
     width: 40%;
     text-align: center;
 }
+.cat{
+    margin-bottom: 12px;
+}
 div[class^='line-']{
-    margin-top: 1em;
     width: 33%;
     height: 2px;
 }
 .line-g{
     border: 1px solid var(--lime);
 }
+.target{
+    display: none;
+}
+.cat:hover{
+    margin-bottom: 10px;
+}
+.cat:hover ~ .target{
+    display: flex;
+}
+
 
 .central-body section{
     padding: 1.5rem;
@@ -152,4 +168,5 @@ footer{
     background-color: wheat;
     position: fixed;
     bottom: 0;
+    z-index: 1000;
 }

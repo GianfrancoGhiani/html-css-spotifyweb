@@ -21,7 +21,6 @@ body{
 
 /* repetitive stuff */
 .btn{
-    font-weight: bold;
     padding: 1em;
     border-radius: 2em;
     border: 1px solid var(--wt);
@@ -40,6 +39,9 @@ body{
 }
 .gr-txt{
     color: var(--grey);
+}
+.b-txt{
+    font-weight: bold;
 }
 .flex{
     display: flex;
@@ -84,9 +86,6 @@ body{
     height: calc(100vh - 90px);
     background-color: var(--blk);
     padding: 1rem;
-}
-.side-bar .playlist{
-    overflow-y: auto;
 }
 .logo{
     width: 100%;
@@ -139,8 +138,6 @@ body{
 }
 .playlist ul{
     margin-top: 1rem;
-    overflow-y: auto;
-
 }
 .playlist a{
     font-size: 1rem;
@@ -231,7 +228,6 @@ li{
     height: 100%;
     overflow-y: auto;
     background-color: var(--deep-blue);
-    font-weight: bold;
     padding: 6rem 0 90px;
 }
 .category ul{
@@ -335,9 +331,6 @@ footer{
 }
 .cover img{
     width: 100%;
-}
-.det, .time{
-    font-weight: bold;
 }
 .player{
     width: 40%;

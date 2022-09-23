@@ -314,13 +314,35 @@ footer{
     z-index: 1000;
 }
 .song, .device-sett{
-    width: 20%;
+    width: 17%;
+    max-width: 165px;
 }
 .det .cap:first-child, .add i, .device-sett i{
     font-size: 1.3rem;
 }
+.add{
+    width: 20%;
+}
 .add i{
     color: var(--grey);
+}
+.heart i:last-child{
+    display: none;
+}
+.heart:hover i:last-child{
+    display: block;
+}
+.heart:hover i:first-child{
+    display: none;
+}
+.folder i:last-child{
+    display: none;
+}
+.folder:hover i:last-child{
+    display: block;
+}
+.folder:hover i:first-child{
+    display: none;
 }
 .cover{
     width:30%;
@@ -398,7 +420,7 @@ footer{
     .cover img{
         min-width: 35px;
     }
-    .device-sett{
+    .song, .device-sett{
         min-width: 120px;
     }
     
@@ -407,7 +429,9 @@ footer{
     .card{
         width: calc(100% / 2);
     }
-    
+    .add{
+        display: block;
+    }
 }
 @media screen and (max-width:600px){
     .side-bar{

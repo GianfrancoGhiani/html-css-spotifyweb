@@ -126,13 +126,16 @@
                         <h2>Recently Played</h2>
                         <div class="cards flex">
                             <div class="card">
-                                <div class="play">
-                                    <img src="img/metal_lifting.jpg" alt="metal">
-                                    <div class="overlay"><i class="fa-solid fa-play"></i></div>
-                                </div>
-                                <div class="title cap">heavy metal</div>
-                                <div class="gr-txt cap">subtitle</div>
-                                
+                                <a href="">
+                                    
+                                    <div class="play">
+                                        <img src="img/metal_lifting.jpg" alt="metal">
+                                        <div class="overlay"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="title cap">heavy metal</div>
+                                    <div class="gr-txt cap">subtitle</div>
+                                    
+                                </a>
                             </div>
                             <div class="card">
                                 <div class="play">
@@ -250,20 +253,27 @@
                 <div class="command flex j-cnt">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-solid fa-play"></i>
+                    <input type="checkbox" name="play" id="play">
+                    <label for="play">
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-pause"></i>
+                    </label>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
                 <div class="time b-txt flex a-cnt j-cnt">
                     <div class="start">01:00</div>
-                    <input type="range" name="time" id="time" value="20">
+                    <input type="range" name="time" id="time" value=2">
                     <div class="end"> 05:00</div>
                 </div>
             </div>
             <div class="device-sett wt-txt flex a-cnt j-btwn">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
+                <input type="checkbox" name="sel-vol" id="sel-vol">
+                <label for="sel-vol">
+                    <i class="fa-solid fa-volume-low"></i>
+                </label>
                 <input type="range" name="volume" id="volume">
             </div>
         </footer>

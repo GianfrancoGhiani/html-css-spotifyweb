@@ -257,7 +257,10 @@ div[class^='line-']{
 .central-body section{
     padding: 1.5rem;
 }
-
+.recently a{
+    text-decoration: none;
+    color: var(--wt);
+}
 .card img {
     width: 100%;
     display: block;
@@ -268,7 +271,12 @@ div[class^='line-']{
 .play{
     position: relative;
 }
+.play img{
+    border-radius: .7rem;
+
+}
 .play .overlay{
+    border-radius: .7rem;
     height: 100%;
     width: 100%;
     background-color: var(--bg-topbar);
@@ -368,11 +376,10 @@ footer{
 .command i:hover{
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
-.command i:nth-child(3){
+.command label i{
     font-size: 2rem;
 }
 .time input{
-    cursor: pointer;
     width: 70%;
     height: .4rem;
     border-radius: .2rem;
@@ -390,8 +397,52 @@ footer{
     font-size: 1.2rem;
     margin: .5rem;
 }
+#play{
+    display: none;
+}
+label#play i:last-child{
+    display: none;
+}
+#play:checked ~ label i:last-child{
+    display: block;
+}
+#play:checked ~ label i:first-child{
+    display: none;
+}
+input#sel-vol{
+    display: none;
+}
 
+/***********************************************/
 
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--grey);
+    height: .4rem;
+    border-radius: .2rem;
+    position: relative;
+}
+input[type="range"]::-moz-range-track {
+    background: var(--grey);
+    height: .4rem;
+    border-radius: .2rem;
+} 
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: .7rem;
+    width: 20%;
+    border-radius: .5rem;
+    background: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(0, -50%);
+}
 /***********************************************/
 @media screen and (max-width:1100px){
     .card{
@@ -432,6 +483,28 @@ footer{
     .add{
         display: block;
     }
+    #volume{
+        display: none;
+    }
+    .device-sett{
+        min-width: fit-content;
+        width: 60px;
+        position: relative;
+    }
+    #sel-vol:checked ~ #volume{
+        display: block;
+        transform: rotate(270deg);
+        position: absolute;
+        right: -2.2rem;
+        bottom:50px;
+        width: 5rem;
+    }
+    
+
+
+
+
+
 }
 @media screen and (max-width:600px){
     .side-bar{

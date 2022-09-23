@@ -244,20 +244,14 @@ div[class^='line-']{
     height: 2px;
 }
 .line-g{
-    border: 1px solid var(--lime);
-}
-.target{
-    display: none;
+    border: 1px solid var(--deep-blue);
 }
 .cat:hover{
-    margin-bottom: 10px;
     color: var(--wt);
 }
-.cat:hover ~ .target{
-    display: flex;
+.cat:hover ~ .target .line-g{
+    border-color: var(--lime);
 }
-
-
 .central-body section{
     padding: 1.5rem;
 }
@@ -304,7 +298,9 @@ div[class^='line-']{
 
 }
 
-
+li.active, .category .target .active{
+    border-color: var(--lime);
+}
 
 footer{
     padding: 1rem;

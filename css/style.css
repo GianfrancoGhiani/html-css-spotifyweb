@@ -108,6 +108,7 @@ body{
     overflow-y: auto;
 
 }
+
 .side-bar a:hover, .install div:hover{
     color: var(--wt);
 }
@@ -124,6 +125,9 @@ body{
     font-size: 1rem;
     font-weight: bold;
     line-height: 2.5rem;
+}
+.create{
+    width: 60%;
 }
 .navigate li{
     border-left: 2px solid var(--blk);

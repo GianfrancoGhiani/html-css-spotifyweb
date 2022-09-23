@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Heavy Metal</title>
+</head>
+<body id="p1">
+    <div class="wrapper">
+        <main>
+            <!-- left side container -->
+            <div class="side-bar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="logo" class="hide">
+                        <img src="../img/logo-small.svg" alt="logo" class="small">
+                    </a>
+                </div>
+                <nav class="navigate">
+                    <ul>
+                        <li class="active"><a href="#">
+                            <img src="../img/home.svg" alt="home">
+                            <div class="cap hide">home</div>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../img/search.svg" alt="search">
+                            <div class="cap hide">cerca</div>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="../img/libreria.svg" alt="library">
+                            <div class="cap hide">libreria</div>
+                        </a></li>
+                    </ul>
+                </nav>
+                <div class="col j-btwn">
+                    <section class="playlist hide">
+                        <div class="title wt-txt caps">playlist</div>
+                        <div class="create gr-txt cap">crea playlist</div>
+                        <ul>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                            <li><a href="#" class="gr-txt cap">nome playlist</a></li>
+                        </ul>
+                    </section>
+                    <section class="install-john">
+                        <a href="#" class="install flex a-cnt">
+                            <img src="../img/download.svg" alt="download">
+                            <div class="gr-txt cap hide">installa app</div>
+                        </a>
+                        <div class="hr hide"></div>
+                        <div class="john flex">
+                            <div class="prof"><img src="../img/profile.svg" alt="john"></div>
+                            <div class="cap wt-txt hide">john doe</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- main page body container -->
+            <div class="container">
+                <div class="top-bar flex">
+                    <div class="btn b-txt caps wt-txt"> effettua l'upgrade</div>
+                </div>
+                <div class="central-body">
+                    <div class="hero flex">
+                        <img src="../img/metal_lifting.jpg" alt="metal">
+                        <div class="txt">
+                            <div class="caps wt-txt b-txt">playlist</div>
+                            <h1 class="wt-txt cap">heavy metal</h1>
+                            <p class="gr-txt b-txt">Heavy Metal forever. From classics to fresh new tracks, just play it loud! Cover: Disturbed</p>
+                            <p class="wt-txt"><span class="b-txt cap">spotify </span>&#9679; 956.602 Mi piace &#9679; 200 brani, circa 14 ore</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="flex j-btwn a-cnt">
+            <div class="song flex a-cnt j-btwn wt-txt">
+                <div class="cover"><img src="../img/sinister.jpeg" alt="sinister"></div>
+                <div class="det b-txt">
+                    <div class="cap">sinister</div>
+                    <div class="gr-txt cap">brano nome</div>
+                </div>
+                <div class="add flex j-btwn">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart fa-beat"></i>
+                    </div>
+                    <div class="folder">
+                        <i class="fa-regular fa-folder"></i>
+                        <i class="fa-regular fa-folder-open"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="player wt-txt ">
+                <div class="command flex j-cnt">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <input type="checkbox" name="play" id="play">
+                    <label for="play">
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-pause"></i>
+                    </label>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="time b-txt flex a-cnt j-cnt">
+                    <div class="start">01:00</div>
+                    <input type="range" name="time" id="time" value=2">
+                    <div class="end"> 05:00</div>
+                </div>
+            </div>
+            <div class="device-sett wt-txt flex a-cnt j-btwn">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <input type="checkbox" name="sel-vol" id="sel-vol">
+                <label for="sel-vol">
+                    <i class="fa-solid fa-volume-low"></i>
+                </label>
+                <input type="range" name="volume" id="volume">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -27,6 +27,7 @@ body{
     width: 17rem;
     text-align: center;
     cursor: pointer;
+    transition: transform 200ms linear;
 }
 .caps{
     text-transform: uppercase;
@@ -127,6 +128,7 @@ body{
 }
 .create{
     width: 60%;
+    transition: transform 300ms linear, margin-left 300ms linear;
 }
 .navigate li{
     border-left: 2px solid var(--blk);
@@ -340,6 +342,9 @@ footer{
 .command i{
     font-size: 1.3rem;
     margin: 1.5rem;
+}
+.command i:hover{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 .command i:nth-child(3){
     font-size: 2rem;
